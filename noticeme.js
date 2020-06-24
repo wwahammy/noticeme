@@ -34,6 +34,8 @@ module.exports = function noticeme(path, rpt = readPkgTree, http = fetch) {
       coordinates = coordinates.concat(retrieveIncludedJson(path).
           forEach((package) => npmjsCoordinates(package)));
 
+      console.log(coordinates)
+
       http('https://api.clearlydefined.io/notices', {
         method: 'post',
         body: JSON.stringify({ coordinates }),
