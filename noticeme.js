@@ -31,10 +31,10 @@ module.exports = function noticeme(path, rpt = readPkgTree, http = fetch) {
         return coordinate;
       });
 
+     
       coordinates = coordinates.concat(retrieveIncludedJson(path).
-          forEach((package) => npmjsCoordinates(package)));
+      map((package) => npmjsCoordinates(package)));
 
-      console.log(coordinates)
 
       http('https://api.clearlydefined.io/notices', {
         method: 'post',
