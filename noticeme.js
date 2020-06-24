@@ -12,7 +12,7 @@ const npmjsCoordinates = ({ name, version }) =>
 
 function retrieveIncludedJson(path, file = 'included.json') {
   const includedPath = pathMod.join(process.cwd(), path, file);
-  fs.existsSync(includedPath) ? JSON.parse(fs.readFileSync(includedPath, 'utf8')).packages : [];
+  return fs.existsSync(includedPath) ? JSON.parse(fs.readFileSync(includedPath, 'utf8')).packages : [];
 }
 
 module.exports = function noticeme(path, rpt = readPkgTree, http = fetch) {
