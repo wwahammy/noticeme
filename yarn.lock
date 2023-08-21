@@ -11,7 +11,7 @@ __metadata:
   dependencies:
     "@types/diff-match-patch": ^1.0.32
     "@types/lodash": ^4.14
-    "@types/node": ^18
+    "@types/node": ^20
     "@types/node-fetch": ^2.6.2
     "@types/read-package-tree": ^5.2.0
     "@types/yargs": ^17.0.13
@@ -51,10 +51,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18":
+"@types/node@npm:*":
   version: 18.13.0
   resolution: "@types/node@npm:18.13.0"
   checksum: 4ea10f8802848b01672bce938f678b6774ca2cee0c9774f12275ab064ae07818419c3e2e41d6257ce7ba846d1ea26c63214aa1dfa4166fa3746291752b8c6416
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20":
+  version: 20.5.1
+  resolution: "@types/node@npm:20.5.1"
+  checksum: 3dbe611cd67afa987102c8558ee70f848949c5dcfee5f60abc073e55c0d7b048e391bf06bb1e0dc052cb7210ca97136ac496cbaf6e89123c989de6bd125fde82
   languageName: node
   linkType: hard
 
